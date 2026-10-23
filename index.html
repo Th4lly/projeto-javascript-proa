@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Introdução ao JavaScript </title>
+
+    <style>
+        * {
+            transition: all 300ms ease-out;
+        }
+
+        body {
+            color: #ffe4c4;
+            background-color: #1d1d1d;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section,
+        header,
+        article {
+            border-radius: 2rem;
+            background-color: #25262d;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: .0625rem solid #ffffff23;
+        }
+
+        button {
+            height: 3rem;
+            /* 48px */
+            padding: .5rem 1rem;
+            border-radius: 2rem;
+            font-weight: 500;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #ffbcdb;
+            border: .25rem solid #ffbcdb;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff5a91;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Introdução ao JavaScript </h1>
+    </header>
+
+    <main>
+        <section>
+            <h2> O que é o JavaScript? </h2>
+            <p> É uma linguagem de programação de alto nível e dinâmica, muito utilizada para criar aplicações
+                interativas e sistemas de software. </p>
+
+            <p>No desenvolvimento web, trabalha especificamente com duas outras linguagens: </p>
+            <ul>
+                <li> HTML </li>
+                <li> CSS </li>
+            </ul>
+
+            <p> <strong> IMPORTANTE </strong> : JavaScript NÃO É Java!!! </p>
+            <p> Apesar da semelhança nos nomes, são linguagens de programação totalmente diferentes. </p>
+        </section>
+
+        <section>
+            <h2> O que da pra fazer com JavaScript? </h2>
+            <p> Atualmente, é possível trabalhar com o JavaScript das seguintes maneiras: </p>
+
+            <h3> FrontEnd </h3>
+            <ul>
+                <li> Criar interfaces interativas </li>
+                <li> Menus </li>
+                <li> Validações </li>
+                <li> Filtros </li>
+                <li> Animações </li>
+                <li> Dashboards </li>
+                <li> Aplicações gerais com React, Vue, Angular e etc. </li>
+            </ul>
+
+            <h3> Backend </h3>
+            <ul>
+                <li> Criar API's </li>
+                <li> Autenticação </li>
+                <li> Integração com serviços </li>
+                <li> Processamento de requisições </li>
+                <li> Integração com bancos de dados </li>
+            </ul>
+
+            <h3> Aplicações Mobile/Desktop </h3>
+            <ul>
+                <li> Aplicativos para celulares </li>
+                <li> Aplicativos para Desktops </li>
+                <li> Geralmente, utilizamos React Native ou Electron </li>
+            </ul>
+
+            <p> <strong> Lembrete: </strong> A linguagem não fornece todos esses elementos sozinha. As possibilidades
+                citadas acima, dependem também do ambiente de execução, de API's, bibliotecas e frameworks utilizados.
+            </p>
+        </section>
+
+        <section>
+            <h2> Como aplicar o JavaScript? </h2>
+            <p> Existem três formas de aplicar o JavaScript dentro do HTML. Sendo elas: </p>
+            <ul>
+                <li> Inline </li>
+                <li> Interno </li>
+                <li> Externo </li>
+            </ul>
+
+            <article>
+                <h3> JavaScript Inline </h3>
+                <p> Nessa abordagem, o JavaScript é escrito diretamente no atributo de um elemento HTML. Exemplo: </p>
+<button type="button" onclick="alert('Ola, Mundo!')"> Clique aqui para mostrar a mensagem </button>
+            </article>
+
+            <article>
+                <h3> JavaScript Interno </h3>
+                <p> Nessa abordagem o JavaScript é escrito dentro da tag <code> &lt; script &gt; </code>, no próprio
+                    HTML. Exemplo: </p>
+
+                <button type="button" id="botao"> Trocar cor de fundo do site </button>
+            </article>
+        </section>
+
+
+    <section>
+        <article>
+            <h3> Javascript Externo </h3>
+            <p> Nessa abordagem, o Javascript é escrito em um arquivo separado,utilizando
+                a extensão .js,Sendo configurado no atributo src da tag de <code> &Lt;script&gt;</code>
+            Exemplo: </p>
+
+        </article>
+    </section>
+</main>
+
+    <!-- Aplicando o JavaScript Interno -->
+    <script>
+        const botao = document.querySelector("#botao")
+
+        botao.addEventListener("click", function () {
+            document.body.style.backgroundColor = "#e76f6f"
+        })
+    </script>
+
+<!-- aplicando o javascript-->
+<!-- <script src="ola-mundo.js"> </script> -->
+<!-- <script src="01-variaveis.js"> </script> -->
+<script src="02-tipos-de-dados.js"> </script> 
+
+</body>
+
+</html>
