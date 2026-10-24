@@ -1,4 +1,4 @@
-
+console.log("teste")
 // Quando você for comparar um valor, você SEMPRE vai ter um resultado booleano
 // ou seja, sempre será ou true ou false
 
@@ -16,8 +16,8 @@ console.log(10 == 0)
 console.log("------------Ig---------------")
 
 // 2 - Igualdade estrita ===
-// O operador --- verifica se os dois valores são iguais tanto em tipo quanto em valores
-console.log(10 --- 10)
+// O operador === verifica se os dois valores são iguais tanto em tipo quanto em valores
+console.log(10 === 10)
 console.log(10 === "10")
 // console.log(number 10 === string "10")
 console.log(10 === 0)
