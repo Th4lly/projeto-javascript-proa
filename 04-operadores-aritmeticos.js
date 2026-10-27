@@ -28,6 +28,7 @@ console.log(preco / (-frete));
 console.log(-preco) / frete);
 
 console.log(0 / 10);
+console.log(10 / 0);
 
 
 
