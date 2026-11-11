@@ -12,20 +12,20 @@ console.log("------------------------------")
 // 2 - Subtração (-)
 // Serve para subtrair um valor do outro
 console.log(preco - frete);
-console.log(preco - (-frete);
+console.log(preco - (-frete));
 
 console.log("------------------------------")
 
 // 3 - Multiplicação (*)
 // Serve para multiplicar valores
 console.log(preco * frete);
-console.log(preco * (-frete);
+console.log(preco * (-frete));
 
 // 4 - Divisão (/)
 // Serve para dividir um valor por outro
 console.log(preco / frete);
 console.log(preco / (-frete));
-console.log(-preco) / frete);
+console.log((-preco) / frete);
 
 console.log(0 / 10);
 console.log(10 / 0);
