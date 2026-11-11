@@ -91,3 +91,78 @@ console.log(frutas.indexOf("Maçã")); // 1
 console.log(frutas.indexOf("Uva")); // -1
 
 // javascript trata elementos que não existem como -1, e elementos que existem como 0 ou maior que 0. Então, podemos utilizar o indexOf() para verificar se o elemento existe no array, retornando true ou false.
+
+// Metodos com laço de repetição
+
+const notas = [5, 7, 8, 2, 10];
+
+// filter () - Serve para retornar todos os elementos que atendem a uma determinada condição
+console.log("--- filter() ---");
+
+notas.filter(function(nota) {
+    if (nota >= 7) {
+        console.log(nota);
+    }
+});
+
+// Versão simplificada do filter()
+const aprovados = notas.filter(nota => nota >= 7);
+console.log(aprovados);
+
+
+// find() - diferente do filter, Retorna o primeiro elemento que atende a uma determinada condição, ele retorna apenas 1 resultado
+const resultado = notas.find((nota) => nota >= 7);
+console.log(aprovados);  
+
+// Transformando elementos
+const numeros = [1, 2, 3, 4, 5];
+
+// map() - Retorna um novo array com os elementos transformados, aplicando uma função a cada elemento do array original
+// é util quando precisamos preservar o array original e criar um novo array com os elementos transformados, sem modificar o array original.
+const dobro = numeros.map((numero) => numero * 2);
+console.log(dobro); // [2, 4, 6, 8, 10]
+
+// arrays de objetos
+
+const pessoas = [
+    {
+      nome: "Alice",
+      idade: 19,
+      nota: 9 
+    },
+    { 
+        nome: "charlson", 
+        idade: 30, 
+        nota: 8.5
+     },
+    { 
+        nome: "juninho", 
+        idade: 35,
+        nota: 7
+     },
+     {
+        nome: "lurdes",
+        idade: 25,
+        nota: 6
+     },
+     {
+        nome: "ariana",
+        idade: 28,
+        nota: 7.2
+     },
+     {
+        nome: "jose",
+        idade: 40,
+        nota: 5.5
+     }
+];
+
+pessoas.map((pessoa) => {
+   // console.log(pessoa);
+
+    console.log(`
+        nome: ${pessoa.nome}
+        idade:${pessoa.idade}
+        nota: ${pessoa.nota}
+    `);
+});
